@@ -1,0 +1,27 @@
+{
+    "version": "9.0.0",
+    "name": "@pqina/dropzone-pintura",
+    "browser": "dist/useEditorWithDropzone.js",
+    "main": "dist/useEditorWithDropzone.js",
+    "module": "src/useEditorWithDropzone.js",
+    "description": "Pintura Image Editor adapter for use with Dropzone",
+    "author": "Rik Schennink at PQINA",
+    "homepage": "https://pqina.nl/pintura/",
+    "license": "https://pqina.nl/pintura/license/",
+    "type": "module",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build && mv dist/useEditorWithDropzone.iife.js dist/useEditorWithDropzone-iife.js",
+        "preview": "vite preview"
+    },
+    "peerDependencies": {
+        "@pqina/pintura": "^8.x",
+        "dropzone": "^5.x"
+    },
+    "devDependencies": {
+        "vite": "^4.3.5"
+    }
+}
